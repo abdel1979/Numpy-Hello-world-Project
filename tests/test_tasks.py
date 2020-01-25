@@ -17,7 +17,7 @@ def test_task1():
 
 @pytest.mark.test_task2
 def test_task2():
-    assert get_calls(solution)[0] == 'np:genfromtxt:data/scores.txt:delimiter:,', 'Have you loaded the TXT file using the `np.genfromtxt` method with proper arguments?'
+    assert get_calls(solution)[0] == 'np:genfromtxt:data/scores.txt:delimiter:,', 'Have you loaded the TXT file using the `np.genfromtxt` method with 'delimiter' arguments?'
     assert get_assignments(solution)[0][:10] == 'score_data', 'Has the `score_data` DataFrame been created?'
 
 # -------------------------------------------------
